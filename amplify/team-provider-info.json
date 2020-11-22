@@ -10,6 +10,11 @@
       "StackName": "amplify-hvaderimatinn-dev-150612",
       "StackId": "arn:aws:cloudformation:eu-west-1:732655886544:stack/amplify-hvaderimatinn-dev-150612/e1c7c100-2ccb-11eb-b82a-0ad12ebbcfd9",
       "AmplifyAppId": "drii86l081i77"
+    },
+    "categories": {
+      "auth": {
+        "hvaderimatinn76a82085": {}
+      }
     }
   }
 }

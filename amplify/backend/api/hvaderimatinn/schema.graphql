@@ -1,0 +1,40 @@
+type User 
+@model
+@auth(
+  rules: [
+      { allow: groups, groups: ["Users"], queries: [get, list], mutations: [create, update, delete] }
+    ]
+  )
+{
+  id: ID!
+  name: String!
+  consent: Boolean
+  email: String!
+  firstName: String!
+  lastName: String!
+  role: String!
+  recipes: [Recipe] @connection
+}
+
+type Recipe @model @auth(rules: [{ allow: owner }])
+{
+  id: ID!
+  name: String!
+  link: String
+  text: String
+  carb: Int
+  fat: Int
+  protein: Int
+  kcal: Int
+  ingredients: [Ingredients] @connection
+}
+
+type Ingredients @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  name: String!
+  value: Int
+  carb: Int
+  fat: Int
+  protein: Int
+  kcal: Int
+}
