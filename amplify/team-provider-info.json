@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hvaderimatinn-dev-150612-authRole",
+      "UnauthRoleArn": "arn:aws:iam::732655886544:role/amplify-hvaderimatinn-dev-150612-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::732655886544:role/amplify-hvaderimatinn-dev-150612-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-hvaderimatinn-dev-150612-deployment",
+      "UnauthRoleName": "amplify-hvaderimatinn-dev-150612-unauthRole",
+      "StackName": "amplify-hvaderimatinn-dev-150612",
+      "StackId": "arn:aws:cloudformation:eu-west-1:732655886544:stack/amplify-hvaderimatinn-dev-150612/e1c7c100-2ccb-11eb-b82a-0ad12ebbcfd9",
+      "AmplifyAppId": "drii86l081i77"
+    }
+  }
+}
