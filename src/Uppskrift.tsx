@@ -1,7 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Uppskrift.css';
+import Amplify, {API, graphqlOperation} from 'aws-amplify';
+
+
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 
 export default function Uppskrift(props: any) {
+    const [recipe, setRecipe] = useState([{}]);
+
+    async function fetchRecipe(){
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
     return (
         <div id="uppskrift">
                 <div id="pattern">
