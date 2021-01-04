@@ -1,0 +1,20 @@
+.CreateRecipeForm{
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+.InputFeild{
+    height:100px;
+    width:400px;
+    background-color: white;
+    padding: 20px 20px 5px 20px;
+}
+.InputFeild label {
+    font-size: 1.25rem;
+}
+
+.InputFeild textarea{
+    width:390px;
+    height: 85px;
+}

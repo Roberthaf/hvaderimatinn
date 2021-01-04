@@ -3,7 +3,10 @@ import './NavigationBar.css';
 
 export default function NavigationBar(){
     return(
-    <div id="navigationBar">
-        Navigation 
-    </div>)
+    <div className="navigationBar">
+        <div className="navItem">Heim</div>
+        <div className="navItem">Uppskriftir</div>
+        <div className="navItem">Velja matseðil</div>
+    </div>
+    );
 };

@@ -1,9 +1,26 @@
-#navigationBar{
+.navigationBar{
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     position: relative;
     top: 0;
     left: 0;
-    background-color: green;
-
+    overflow: hidden;
+    background-color: #333;
 }
+.navItem{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navigationBar a:hover {
+    background-color: #ddd;
+    color: black;
+ }
+  
+.navigationBar a.active {
+    background-color: #4CAF50;
+    color: white;
+ }

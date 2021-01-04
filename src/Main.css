@@ -1,9 +1,13 @@
 #main{
     position: relative;
-    top: 10vh;
-    width: 40vw;
-    height: 80vh;
-    background-color: beige;
+    width: 900px;
+    height: 90vh;
+    background-color: gray;
     margin: auto;
-    
+    padding: 10px 10px 10px 10px;
 }
+/* @media screen and (max-width: 600px) {
+    #main {
+      width: 100wv;
+    }white
+  } */
