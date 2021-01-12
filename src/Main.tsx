@@ -1,56 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Main.css";
-/* import Uppskrift from './Uppskrift'; */
 import HeaderText from "./components/HeaderText";
-import NavigationButton from "./components/NavigationButton";
 import Uppskriftir from "./Uppskriftir";
 
-export default function Main() {
-  const [eat, setEat] = useState(false);
-  const [recipe, setRecipe] = useState(false);
-  const [menu, setMenu] = useState(false);
+interface MainProps {
+  showMenu: boolean;
+  showRecipe: boolean;
+  showFoodSelect: boolean;
+}
 
-  function handlePageEat() {
-    setEat(!eat);
-    setRecipe(false);
-    setMenu(false);
-  }
-
-  function handlePageRecipe() {
-    setEat(false);
-    setRecipe(!recipe);
-    setMenu(false);
-  }
-
-  function handlePageMenu() {
-    setEat(false);
-    setRecipe(false);
-    setMenu(!menu);
-  }
-
+export default function Main(props:MainProps) {
+  
   return (
     <div id="main">
       <HeaderText headerText={"Hvað er í matinn"} />
-      <div>
-        <NavigationButton
-          name={"Hvað á ég að borða?"}
-          handleChange={handlePageEat}
-          id={"borda"}
-        />
-
-        <NavigationButton
-          name={"Mínar uppskriftir"}
-          handleChange={handlePageRecipe}
-          id={"uppskriftir"}
-        />
-        <NavigationButton
-          name={"búa til matseðil"}
-          handleChange={handlePageMenu}
-        />
-      </div>
-      {eat ? <div>Þú átt að borða </div> : ""}
-      {recipe ? <Uppskriftir /> : ""}
-      {menu ? <div>Þetta er menu</div> : ""}
+        {props.showRecipe && <Uppskriftir />}
+        {props.showMenu && <div>Menu</div>}
+        {props.showFoodSelect && <div>Velja Mat</div>}
     </div>
   );
 }
