@@ -1,13 +1,9 @@
-#main{
-    position: relative;
-    max-width: 930px;
-    height: 90vh;
-    
-    margin: auto;
-    padding: 10px 10px 10px 10px;
+#main {
+  position: relative;
+  /*max-width: 120px;*/
+  height: 90vh;
+  /* background-color: blueviolet; */
+  /* margin: 100 auto; */
+  /* padding: 10px 10px 10px 10px; */
+  margin: 10px 100px 0px 100px;
 }
-/* @media screen and (max-width: 600px) {
-    #main {
-      width: 100wv;
-    }white
-  } */
